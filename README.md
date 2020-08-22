@@ -1,0 +1,1 @@
+My first simple web app. Generates random quote from an online JSON file. A mix of React, SaSS, JavaScript, minor Bootstrap and jQuery for animations only. 

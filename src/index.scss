@@ -1,0 +1,113 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400);
+
+body {
+  font-family: "Raleway", sans-serif;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  transition: 1s;
+  background-color: #eca4a4;
+  color: #eca4a4;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+#quote-box {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  border-radius: 3px;
+  width: 45%;
+  padding: 40px 40px 15px 40px;
+  text-align: center;
+  height: 40%;
+  font-weight: 500;
+  margin: 0 auto;
+
+  .quote-text {
+    font-weight: 500;
+    font-size: 1.7em;
+  }
+
+  .quote-author {
+    text-align: right;
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .buttons-left {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  button {
+    transition: 1s;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    outline: none;
+    background-color: #eca4a4;
+    padding: 0.4em;
+    display: flex;
+    justify-content: space-between;
+    white-space: nowrap;
+  }
+
+  button:focus {
+    outline: none;
+  }
+}
+
+footer {
+  width: 450px;
+  text-align: center;
+  display: flex;
+  margin: auto;
+  font-size: 0.9em;
+  color: #fff;
+  position: relative;
+  top: 45px;
+  left: 42.5%;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+  font-size: 0.9em;
+
+  a {
+    color: #fff;
+  }
+  a:hover {
+    text-decoration: none;
+    color: black;
+  }
+}
+
+/* Media queries for responsive layout */
+@media all and (max-width: 480px) {
+  #quote-box {
+    width: 90%;
+    position: relative;
+    left: 45%;
+  }
+}
+
+@media all and (min-width: 480px) and (max-width: 768px) {
+  #quote-box {
+    width: 90%;
+  }
+}
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+  #quote-box {
+    width: 80%;
+  }
+}
+
+@media all and (min-width: 1024px) and (max-width: 1280px) {
+  #quote-box {
+    width: 50%;
+  }
+}
